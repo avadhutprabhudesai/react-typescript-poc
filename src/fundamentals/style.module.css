@@ -1,0 +1,36 @@
+.content {
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.tag {
+  border: 1px solid #ccc;
+  display: grid;
+  grid-template-columns: minmax(200px, 500px);
+  grid-template-rows: auto 150px 20px;
+  border-radius: 15px;
+  background: red;
+}
+
+.tag__header {
+  text-align: center;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  color: #fff;
+}
+
+.tag__header h1,
+.tag__header p {
+  margin: 0px;
+}
+
+.tag__body {
+  background: #fff;
+  display: grid;
+  place-items: center;
+}
