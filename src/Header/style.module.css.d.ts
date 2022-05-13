@@ -1,6 +1,6 @@
 import globalClassNames, { ClassNames as GlobalClassNames } from '..style.d';
 declare const classNames: typeof globalClassNames & {
-  readonly content: 'content';
+  readonly header: 'header';
 };
 export default classNames;
-export type ClassNames = 'content' | GlobalClassNames;
+export type ClassNames = 'header' | GlobalClassNames;
