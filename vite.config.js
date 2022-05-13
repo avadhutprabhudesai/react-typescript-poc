@@ -1,7 +1,5 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import sassDts from 'vite-plugin-sass-dts';
-import path from 'path';
 
 export default defineConfig((configEnv) => {
   const isDevelopment = configEnv.mode === 'development';
@@ -13,14 +11,6 @@ export default defineConfig((configEnv) => {
           : '[hash:base64:5]',
       },
     },
-    plugins: [
-      react(),
-      sassDts({
-        global: {
-          generate: true,
-          outFile: path.resolve(__dirname, './src/style.d.ts'),
-        },
-      }),
-    ],
+    plugins: [react()],
   };
 });
