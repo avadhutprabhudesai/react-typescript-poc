@@ -14,16 +14,3 @@ body {
   margin: 0;
   padding: 0
 }
-
-#root {
-  height: 100%;
-}
-
-.layout {
-  display: grid;
-  grid-template-rows: auto 1fr;
-}
-
-.layout__header {
-  padding: 20px 10px;
-}

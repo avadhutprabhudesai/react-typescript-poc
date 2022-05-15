@@ -1,3 +1,16 @@
 .header {
-  color: skyblue;
+  background-color: purple;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: 200;
+  color: #fff;
+}
+
+.header a {
+  text-decoration: none;
+  color: #fff;
 }
