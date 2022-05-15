@@ -1,0 +1,14 @@
+.content {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  gap: 25px;
+}
+
+.user {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 20px;
+}
