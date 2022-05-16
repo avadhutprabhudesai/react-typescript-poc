@@ -8,6 +8,7 @@ import './src/ts-basics/type-guards-and-discriminated-unions';
 import './src/ts-basics/generics';
 import Layout from './src/Layout/Layout';
 import ComponentProps from './src/Components-Props/ComponentProps';
+import Hooks from './src/Hooks/Hooks';
 
 function RouteConfig() {
   return (
@@ -19,7 +20,7 @@ function RouteConfig() {
             path="/components-and-props"
             element={<ComponentProps />}
           ></Route>
-          <Route path="/hooks" element={<h1>hooks</h1>}></Route>
+          <Route path="/hooks" element={<Hooks />}></Route>
           <Route
             path="/form-and-events"
             element={<h1>form-and-events</h1>}
