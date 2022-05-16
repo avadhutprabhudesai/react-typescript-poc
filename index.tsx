@@ -9,6 +9,7 @@ import './src/ts-basics/generics';
 import Layout from './src/Layout/Layout';
 import ComponentProps from './src/Components-Props/ComponentProps';
 import Hooks from './src/Hooks/Hooks';
+import FormsAndEvents from './src/FormsAndEvents/FormsAndEvents';
 
 function RouteConfig() {
   return (
@@ -21,10 +22,7 @@ function RouteConfig() {
             element={<ComponentProps />}
           ></Route>
           <Route path="/hooks" element={<Hooks />}></Route>
-          <Route
-            path="/form-and-events"
-            element={<h1>form-and-events</h1>}
-          ></Route>
+          <Route path="/form-and-events" element={<FormsAndEvents />}></Route>
           <Route path="/context" element={<h1>context</h1>}></Route>
         </Route>
       </Routes>
