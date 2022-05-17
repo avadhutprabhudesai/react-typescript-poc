@@ -10,6 +10,7 @@ import Layout from './src/Layout/Layout';
 import ComponentProps from './src/Components-Props/ComponentProps';
 import Hooks from './src/Hooks/Hooks';
 import FormsAndEvents from './src/FormsAndEvents/FormsAndEvents';
+import Context from './src/Context/Context';
 
 function RouteConfig() {
   return (
@@ -23,7 +24,7 @@ function RouteConfig() {
           ></Route>
           <Route path="/hooks" element={<Hooks />}></Route>
           <Route path="/form-and-events" element={<FormsAndEvents />}></Route>
-          <Route path="/context" element={<h1>context</h1>}></Route>
+          <Route path="/context" element={<Context />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

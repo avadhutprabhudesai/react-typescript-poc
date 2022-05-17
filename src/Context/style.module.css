@@ -1,0 +1,67 @@
+.content {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  gap: 25px;
+}
+
+.verticalFlex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 20px;
+}
+
+.card .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.fetch {
+  align-self: flex-start;
+}
+
+.counterWrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: minmax(200px, 500px);
+}
+
+.counter {
+  margin: 100px 0;
+  font-size: 52px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+
+}
+
+.actionForm {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto min-content;
+  gap: 10px;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
