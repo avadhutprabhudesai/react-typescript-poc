@@ -18,20 +18,16 @@ type State = {
   count: number;
 };
 
-type Action =
-  | {
-      type: 'INC';
-    }
-  | {
-      type: 'DEC';
-    }
-  | {
-      type: 'SET';
-      payload: number;
-    }
-  | {
-      type: 'RESET';
-    };
+type BasicAction = {
+  type: 'INC' | 'DEC' | 'RESET';
+};
+
+type SetAction = {
+  type: 'SET';
+  payload: number;
+};
+
+type Action = BasicAction | SetAction;
 
 const initialState: State = {
   count: 0,
